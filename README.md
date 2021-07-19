@@ -10,7 +10,7 @@ This project aims to create a dictionary for efficient retrieval of data.
     
    The following commands can be placed in the input file (the "<>" characters are not needed):
     
-   add_book <bookname>:<author>:<rating>:<number of pages> -> Adds a book to the books trie and the author in the authors trie
+    add_book <bookname>:<author>:<rating>:<number of pages> -> Adds a book to the books trie and the author in the authors trie
     
     search_book <title> -> Searches the book in the books trie and if it exists it prints the details to the output file, otherwise it just tells the user that the book doesn't exist.
     
