@@ -1,16 +1,16 @@
 # Trie-implementation
 This project aims to create a dictionary for efficient retrieval of data.
     
-    There are 2 main trees in this program, one that stores the name of the books and one that stores the name of the authors. At the end of each final letter in a book/author name there is a pointer to another structure.
+   There are 2 main trees in this program, one that stores the name of the books and one that stores the name of the authors. At the end of each final letter in a book/author name there is a pointer to another structure.
     In the books trie, it points to a structure called "Carte" (which is the romanian word for book). It contains information about the book, such as number of pages, a rating and the author. 
     In the authors trie, it points to a book trie that contains all the books that have been written by that specific author. 
     If the user decides to delete all the books written by an author, not only are the books in the book trie deleted, but the books in the book trie located at the end of the authors trie are deleted, as well as the author from the authros trie.
     
-    Usage:
+   Usage:
     
-    The following commands can be placed in the input file (the "<>" characters are not needed):
+   The following commands can be placed in the input file (the "<>" characters are not needed):
     
-    add_book <bookname>:<author>:<rating>:<number of pages> -> Adds a book to the books trie and the author in the authors trie
+   add_book <bookname>:<author>:<rating>:<number of pages> -> Adds a book to the books trie and the author in the authors trie
     
     search_book <title> -> Searches the book in the books trie and if it exists it prints the details to the output file, otherwise it just tells the user that the book doesn't exist.
     
